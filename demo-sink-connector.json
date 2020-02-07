@@ -1,0 +1,10 @@
+{
+    "name": "redshift-sink",
+    "config": {
+      "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+      "tasks.max": "1",
+      "topics": "connect_demo",
+      "connection.url": "jdbc:redshift://<Redshift-Host>:5439/<Redshift-Database>?user=<Redshift-UserName>&password=<Redshift-Password>",
+      "auto.create": "false"
+    }
+}
